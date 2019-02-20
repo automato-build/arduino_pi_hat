@@ -6,13 +6,12 @@
 #### BOTTOM VIEW
 ![](/imgs/62d7c4b5-6a1f-4da7-98b2-4861ed2f5af0_2_0_1.png)
 
-**Note:** _This is  part of a bigger project with automato.farm. This is just a small testing unit for some initial steps for next bigger ideas__
+**Note:** _This is  part of a bigger project with automato.farm. This is just a small testing unit for some initial steps for next bigger ideas_
 
 
 
 Assuming you are using [latest raspbian lite terminal only image](http://downloads.raspberrypi.org/raspbian/release_notes.txt) 
 (we do not need GUI crap ATM).
-
 Also assuming you have **updated**, **upgraded** and **set your locales** from the `raspi-config`. 
 
 ### CONFIGURE HARDWRAE SERIAL INTERFACE:
