@@ -39,9 +39,7 @@ sleep 1
 
 
 sudo pip3.6 install pyserial
-# sudo raspi-config
-# disbale console over serial
-# enable hardware serial
+
 
 # sudo nano /boot/config.txt
 # disables the Bluetooth device and restores UART0/ttyAMA0 to GPIOs 14 and 15
