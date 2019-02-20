@@ -34,4 +34,6 @@ Only keep in mind few thing:
 1. Use another Arduino Pro mini 3.3 V 8MHz as ISP programmer (folow the guide above on how to prepapre an Arduino for burning bootloader). Also use a 3.3 V logic enabled FTDI board for this master pro mini as pro minis do not have USB interface like pro micros. Don't forget to enable 3.3 V logic on it. Most boards have a jumper to switch between logic levels)
 ![]()
 2. Also connect the ISP ports from this board (Will be marked on the baord) to the _MOSI_, _MISO_, _SCK_ and _CS_ pins of the programmer Arduino Pro mini. Rest follow the guide of burning bootloader.
-3. Then you can use the same FTDI programmer  with the programming pads on the board to upload your code to the ATmega328. 
+3. Then you can use the same FTDI programmer  with the programming pads on the board to upload your code to the ATmega328.
+
+In the design we have connected _PI's RX_ to Arduino's digital _pin 3_ and _PI's TX_ to Arduino's digital _pin 2_. We would be using **"SoftwareSerial"** lib on Arduino's side to confifure those pins as _software serial pins_ to establish serial communication with PI. This way we can keep the FTDI programmer attached to the programming pads on the baord to use Arduino's default Serial port for debugging the ATMega328. 
